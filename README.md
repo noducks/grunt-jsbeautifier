@@ -164,6 +164,9 @@ If you want use specific version of js-beautify instead of latest, please refer 
 If you need to beautify files other than js, json, css & html, it can be done by passing **fileTypes**.
 
 For example, beautifying **'.js.erb'** files **along with '.js'**, beautifying **'.less'** files **along with '.css'**, beautifying **'.html.erb'** files **along with '.html'**.
+
+**NOTE:** js-beautify breaks .less code with ampersands in it - `&:last-child` becomes `& :last-child`.
+
 ```
 jsbeautifier: {
     files: ['foo/css/*.css', 'bar/css/*.less', 'foo/js/*.js', 'bar/js/*.js.erb', 'foo/html/*.html', 'bar/html/*.html.erb'],
